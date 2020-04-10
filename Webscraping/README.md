@@ -1,0 +1,3 @@
+This Python file was used to Webscape from Mergent Online. Mergent Online is a database with information on many companies worldwide that I have access to through CU Boulder.
+My supervisor at Motorola Solutions asked me to obtain a list of companies in the Dallas area along with their revenue. In order to accomplish this task I went to Mergent Online and downloaded lists of companies. These downloads however, did not have revenue information tied to them.
+I would have to query each company individually in order to do that. The code in this repo allowed me to do just that.
