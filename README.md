@@ -1,4 +1,4 @@
-# A collection of ML projects
+# A collection of projects
 
 ### The files in this repo are examples of Machine Learning projects I have worked on.
 
