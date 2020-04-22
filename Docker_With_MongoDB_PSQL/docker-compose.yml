@@ -1,0 +1,19 @@
+version: '2'
+services:
+    web:
+        build: .
+        ports:
+        - "80:5000"
+        volumes:
+            - .:/app
+        command: flask run
+        environment:
+          - DATABASE_URL=postgres://postgres:$POSTGRES_PASSWORD@psql:5432/postgres
+        stdin_open: true
+        tty: true
+    psql:
+        image: postgres:latest
+        environment:
+            - POSTGRES_PASSWORD
+    mongo:
+        image: mongo:latest
