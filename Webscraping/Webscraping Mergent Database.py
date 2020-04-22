@@ -41,10 +41,12 @@ try:
     #%%
     #login then continue
     loginusername = driver.find_element_by_xpath('/html/body/div/div/div/div[1]/form/div[1]/input')
-    loginusername.send_keys(input('Username'+'\n'))
+    Username = input('Type UserName:' + '\n')
+    loginusername.send_keys(Username)
     
     loginpassword = driver.find_element_by_xpath('/html/body/div/div/div/div[1]/form/div[2]/input')
-    loginpassword.send_keys(input('Password'+'\n'))
+    Password = input('Type Password:' + '\n')
+    loginpassword.send_keys(Password)
     
     continueclick = driver.find_element_by_xpath('/html/body/div/div/div/div[1]/form/div[6]/button')
     continueclick.click()
